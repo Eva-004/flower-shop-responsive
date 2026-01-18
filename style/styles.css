@@ -6,14 +6,14 @@
     box-sizing: border-box;
 }
 body{
-    max-width: 1920px;
     font-family: "Lato", sans-serif;
 }
 header{
     background-color: rgba(229, 84, 115, 0.1);
 }
 .banner{
-    width: 75%;
+    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -50,24 +50,136 @@ header{
     font-weight: 700;
 }
 
+.features{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 178px;
+}
+.features-content{
+    width: 31%;
+   margin: 0 auto;
+   text-align: center;
+}
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #272727;
+    margin-bottom: 24px;
+}
+.section-description{
+    font-size: 1.125rem;
+    line-height: 1.8rem;
+    color: rgba(39, 39, 39, 0.6);
+    margin-bottom: 48px;
+}
+
+.features-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 128px;
+}
+.flower-card{
+   text-align: center;
+}
+
+.feature-image{
+    max-width: 464px;
+    margin-bottom: 32px;
+    border-radius: 100% 100% 0 0;
+}
+.feature-image img{
+    width: 100%;
+   height:auto;
+   /* padding: 110px 78px 0px 76px; */
+   object-fit: cover;
+   
+}
+.bg-1{
+    background-color: rgba(167, 33, 98, 0.15);
+    padding: 110px 78px 0px 76px;
+}
+.bg-2{
+    background-color: rgba(5, 151, 160, 0.15);
+    padding: 117px 47px 51px 47px;
+}
+.bg-3{
+    background-color: rgba(71, 125, 17, 0.15);
+    padding: 67px 75px 0px 75px;
+}
+.features-card a{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.19rem;
+    color: #272727;
+}
+.services{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(39, 39, 39, 0.05);
+    margin-bottom: 128px;
+}
+.our-services{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 86px 175px;
+}
+.service-card img{
+    margin-bottom: 24px;
+}
+.service-card{
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: 600;
+   line-height: 2.19rem;
+   color: rgba(39, 39, 39, 0.8);
+}
+.service-card a{
+    text-decoration: none;
+    font-size: 1.5rem;
+   font-weight: 600;
+   line-height: 2.19rem;
+   color: rgba(39, 39, 39, 0.8);
+}
+
+
   @media screen and (max-width: 1535px) {
     .banner-title{
     font-size: 4rem;
    }
  }
   @media screen and (max-width: 1280px) {
+    .banner{
+        margin: 0 auto;
+    }
    .banner-description{
     font-size: 1rem;
     margin: 1rem 0;
    }
+
  }
   @media screen and (max-width: 1024px) {
+    
     .banner-content{
         width: 100%;
     }
     .banner-title{
     font-size: 3rem;
    }
+   .features-content{
+    width: 50%;
+   }
+   .features-card{
+    flex-direction: column;
+}
+  .our-services{
+   gap:40px
+ }
  }
 @media screen and (max-width: 768px) {
     .banner{
@@ -81,6 +193,9 @@ header{
     .banner-title{
     font-size: 3rem;
    }
+   .our-services{
+    flex-direction: column;
+}
  }
  @media screen and (max-width: 640px) {
     .banner{
